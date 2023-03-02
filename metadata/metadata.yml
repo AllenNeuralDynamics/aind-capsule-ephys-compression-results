@@ -1,5 +1,5 @@
 metadata_version: 1
-name: aind-capsule-template
-description: Basic structure of a capsule to be customized as needed.
+name: Ephys compression results
+description: CodeOcean capsules to reproduce the results of the "Compression strategies for large-scale electrophysiology data" paper.
 authors:
 - name: AIND
