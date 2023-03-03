@@ -65,7 +65,6 @@ def cohen_d(x, y):
     nx = len(x)
     ny = len(y)
     dof = nx + ny - 2
-    print(np.mean(x), np.mean(y))
     return (np.mean(x) - np.mean(y)) / np.sqrt(((nx-1)*np.std(x, ddof=1) ** 2 + (ny-1)*np.std(y, ddof=1) ** 2) / dof)
 
 

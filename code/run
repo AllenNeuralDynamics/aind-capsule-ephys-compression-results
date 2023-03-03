@@ -4,5 +4,12 @@ jupyter nbconvert \
 	--ExecutePreprocessor.allow_errors=True \
 	--ExecutePreprocessor.timeout=-1 \
 	--FilesWriter.build_directory=../results \
-	--execute benchmark-lossless.ipynb
+	--execute lossless.ipynb
 
+
+jupyter nbconvert \
+	--to 'html' \
+	--ExecutePreprocessor.allow_errors=True \
+	--ExecutePreprocessor.timeout=-1 \
+	--FilesWriter.build_directory=../results \
+	--execute lossy.ipynb
