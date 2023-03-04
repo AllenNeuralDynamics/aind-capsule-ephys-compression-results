@@ -1,4 +1,4 @@
-# This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
+# Generate output html and figures
 jupyter nbconvert \
 	--to 'html' \
 	--ExecutePreprocessor.allow_errors=True \
@@ -13,3 +13,7 @@ jupyter nbconvert \
 	--ExecutePreprocessor.timeout=-1 \
 	--FilesWriter.build_directory=../results \
 	--execute lossy.ipynb
+
+# Clean output
+jupyter nbconvert --clear-output --inplace lossless.ipynb
+jupyter nbconvert --clear-output --inplace lossy.ipynb
