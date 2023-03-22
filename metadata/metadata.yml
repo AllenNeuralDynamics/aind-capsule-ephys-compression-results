@@ -1,5 +1,16 @@
 metadata_version: 1
-name: Ephys compression results
-description: CodeOcean capsules to reproduce the results of the "Compression strategies for large-scale electrophysiology data" paper.
+name: Compression strategies for large-scale electrophysiology data
+description: CodeOcean capsules to reproduce the results of the "Compression strategies
+  for large-scale electrophysiology data" paper.
+tags:
+- electrophysiology
+- data compression
+- spike sorting
+- Neuropixels
 authors:
-- name: AIND
+- name: Alessio Buccino
+- name: Josh Siegle
+- name: Olivier Winter
+- name: David Bryant
+- name: David Feng
+- name: Karel Svoboda
