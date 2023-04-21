@@ -14,6 +14,19 @@ jupyter nbconvert \
 	--FilesWriter.build_directory=../results \
 	--execute lossy.ipynb
 
+
+if [[ -z "${KACHERY_CLOUD_CLIENT_ID}" ]] && [[ -z "${KACHERY_CLOUD_PRIVATE_KEY}" ]]; then
+    echo "KACHERY_CLOUD_CLIENT_ID and KACHERY_CLOUD_PRIVATE_KEY are not set. Skipping lossy-figurl-visualization.ipynb"
+else
+    jupyter nbconvert \
+		--to 'html' \
+		--ExecutePreprocessor.allow_errors=True \
+		--ExecutePreprocessor.timeout=-1 \
+		--FilesWriter.build_directory=../results \
+		--execute lossy-figurl-visualization.ipynb
+fi
+
 # Clean output
 jupyter nbconvert --clear-output --inplace lossless.ipynb
 jupyter nbconvert --clear-output --inplace lossy.ipynb
+jupyter nbconvert --clear-output --inplace lossy-figurl-visualization.ipynb
