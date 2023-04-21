@@ -1,0 +1,14 @@
+environment_version: 1
+credentials:
+- type: general
+  id: XRM6X3Qpqqp88V
+  description: AIND Kachery Zone
+  value: KACHERY_ZONE
+- type: general
+  id: RcmzHpcVXptATJ
+  description: AIND Kachery Client ID
+  value: KACHERY_CLOUD_CLIENT_ID
+- type: general
+  id: JDLMteNSGDrM5V
+  description: AIND Kachery Key
+  value: KACHERY_CLOUD_PRIVATE_KEY
