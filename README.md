@@ -32,6 +32,6 @@ The notebooks can be run with the `code/run` bash script.
 ### Results
 
 The `code/run` will generate html files for each notebook, a `figures` folder with PDF figures in the manuscript, and a 
-`visualization_output.json` and `viz_latex.txt` with the Figurl links in JSON and LaTex formats.
+`visualization_output.json` and `viz_latex.txt` with the Figurl links in JSON and LaTeX (as it appears in Appendix A) formats.
 
 Note that the PDF figures have been manually modified (annotations, colors) for the final published version.
