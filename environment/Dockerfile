@@ -1,4 +1,4 @@
-# hash:sha256:bd9ee9f91264dd0329f7a4fdc371d77707c2a9f4c3d5ff00ce1c5e8f7b321405
+# hash:sha256:2339225513b50093e2fb85627adaede73c313cb19c37c22d8ea7121da8abe75b
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/jupyterlab:3.0.9-miniconda4.9.2-python3.8-ubuntu20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -9,7 +9,9 @@ COPY git-askpass /
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+        fonts-freefont-ttf=20120503-10 \
         libvips \
+        msttcorefonts \
     && rm -rf /var/lib/apt/lists/*
 
 RUN conda install -y \

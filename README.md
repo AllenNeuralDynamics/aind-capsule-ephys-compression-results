@@ -24,7 +24,7 @@ The scripts in the `code` assume that the `ephys-compression-result` asset is av
 In the `code` folder, there are 3 jupyter notebooks to reproduce all figures and results in the "Results" section of the paper:
 
 - `code/lossless.ipynb`: reproduces lossless results (Figures 1-8, S1-S3)
-- `code/lossy.ipynb`: reproduces lossy results (Figures 9-14, S4-S7)
+- `code/lossy.ipynb`: reproduces lossy results (Figures 9-14, S4-S8)
 - `code/lossy-figurl-visualizations.ipynb`: reproduces [Figurl](https://github.com/flatironinstitute/figurl) visualization web links of Appendix A
 
 The notebooks can be run with the `code/run` bash script.
